@@ -45,7 +45,7 @@ finishtime=starttime=plist[0]['Arrival Time']
 while 1:
 	finish='true'
 	for l in range(count):
-		if cur==wtq[dequeue]['ReturnTime']:
+		if cur>=wtq[dequeue]['ReturnTime']:
 			plist[l]=wtq[dequeue]
 			dequeue=dequeue+1	
 		if plist[l]['position']==0:
